@@ -6,34 +6,6 @@
         "className": "",
         "data": {
           "sourceHandle": {
-            "dataType": "ChatInput",
-            "id": "ChatInput-G9aUe",
-            "name": "message",
-            "output_types": [
-              "Message"
-            ]
-          },
-          "targetHandle": {
-            "fieldName": "input_value",
-            "id": "GroqModel-cDlNm",
-            "inputTypes": [
-              "Message"
-            ],
-            "type": "str"
-          }
-        },
-        "id": "reactflow__edge-ChatInput-G9aUe{œdataTypeœ:œChatInputœ,œidœ:œChatInput-G9aUeœ,œnameœ:œmessageœ,œoutput_typesœ:[œMessageœ]}-GroqModel-cDlNm{œfieldNameœ:œinput_valueœ,œidœ:œGroqModel-cDlNmœ,œinputTypesœ:[œMessageœ],œtypeœ:œstrœ}",
-        "selected": false,
-        "source": "ChatInput-G9aUe",
-        "sourceHandle": "{œdataTypeœ:œChatInputœ,œidœ:œChatInput-G9aUeœ,œnameœ:œmessageœ,œoutput_typesœ:[œMessageœ]}",
-        "target": "GroqModel-cDlNm",
-        "targetHandle": "{œfieldNameœ:œinput_valueœ,œidœ:œGroqModel-cDlNmœ,œinputTypesœ:[œMessageœ],œtypeœ:œstrœ}"
-      },
-      {
-        "animated": false,
-        "className": "",
-        "data": {
-          "sourceHandle": {
             "dataType": "GroqModel",
             "id": "GroqModel-cDlNm",
             "name": "text_output",
@@ -58,6 +30,62 @@
         "sourceHandle": "{œdataTypeœ:œGroqModelœ,œidœ:œGroqModel-cDlNmœ,œnameœ:œtext_outputœ,œoutput_typesœ:[œMessageœ]}",
         "target": "ChatOutput-DNj9H",
         "targetHandle": "{œfieldNameœ:œinput_valueœ,œidœ:œChatOutput-DNj9Hœ,œinputTypesœ:[œDataœ,œDataFrameœ,œMessageœ],œtypeœ:œotherœ}"
+      },
+      {
+        "animated": false,
+        "className": "",
+        "data": {
+          "sourceHandle": {
+            "dataType": "ChatInput",
+            "id": "ChatInput-G9aUe",
+            "name": "message",
+            "output_types": [
+              "Message"
+            ]
+          },
+          "targetHandle": {
+            "fieldName": "bug_report",
+            "id": "Prompt Template-3Vxos",
+            "inputTypes": [
+              "Message"
+            ],
+            "type": "str"
+          }
+        },
+        "id": "xy-edge__ChatInput-G9aUe{œdataTypeœ:œChatInputœ,œidœ:œChatInput-G9aUeœ,œnameœ:œmessageœ,œoutput_typesœ:[œMessageœ]}-Prompt Template-3Vxos{œfieldNameœ:œbug_reportœ,œidœ:œPrompt Template-3Vxosœ,œinputTypesœ:[œMessageœ],œtypeœ:œstrœ}",
+        "selected": false,
+        "source": "ChatInput-G9aUe",
+        "sourceHandle": "{œdataTypeœ:œChatInputœ,œidœ:œChatInput-G9aUeœ,œnameœ:œmessageœ,œoutput_typesœ:[œMessageœ]}",
+        "target": "Prompt Template-3Vxos",
+        "targetHandle": "{œfieldNameœ:œbug_reportœ,œidœ:œPrompt Template-3Vxosœ,œinputTypesœ:[œMessageœ],œtypeœ:œstrœ}"
+      },
+      {
+        "animated": false,
+        "className": "",
+        "data": {
+          "sourceHandle": {
+            "dataType": "Prompt Template",
+            "id": "Prompt Template-3Vxos",
+            "name": "prompt",
+            "output_types": [
+              "Message"
+            ]
+          },
+          "targetHandle": {
+            "fieldName": "input_value",
+            "id": "GroqModel-cDlNm",
+            "inputTypes": [
+              "Message"
+            ],
+            "type": "str"
+          }
+        },
+        "id": "xy-edge__Prompt Template-3Vxos{œdataTypeœ:œPrompt Templateœ,œidœ:œPrompt Template-3Vxosœ,œnameœ:œpromptœ,œoutput_typesœ:[œMessageœ]}-GroqModel-cDlNm{œfieldNameœ:œinput_valueœ,œidœ:œGroqModel-cDlNmœ,œinputTypesœ:[œMessageœ],œtypeœ:œstrœ}",
+        "selected": false,
+        "source": "Prompt Template-3Vxos",
+        "sourceHandle": "{œdataTypeœ:œPrompt Templateœ,œidœ:œPrompt Template-3Vxosœ,œnameœ:œpromptœ,œoutput_typesœ:[œMessageœ]}",
+        "target": "GroqModel-cDlNm",
+        "targetHandle": "{œfieldNameœ:œinput_valueœ,œidœ:œGroqModel-cDlNmœ,œinputTypesœ:[œMessageœ],œtypeœ:œstrœ}"
       }
     ],
     "nodes": [
@@ -352,8 +380,8 @@
           "width": 192
         },
         "position": {
-          "x": -140.2700363511929,
-          "y": -13.492834397514908
+          "x": -149.3949397772694,
+          "y": -117.92228471816819
         },
         "selected": false,
         "type": "genericNode"
@@ -387,7 +415,7 @@
             ],
             "frozen": false,
             "icon": "Groq",
-            "last_updated": "2026-04-13T02:59:55.938Z",
+            "last_updated": "2026-04-13T03:00:11.872Z",
             "legacy": false,
             "lf_version": "1.7.2",
             "metadata": {
@@ -460,7 +488,7 @@
             "pinned": false,
             "template": {
               "_frontend_node_flow_id": {
-                "value": "c34ba12a-d5f4-4834-9d03-53729a3395b5"
+                "value": "a0fd0456-96c1-4e75-99bf-163cc5f21e68"
               },
               "_frontend_node_folder_id": {
                 "value": "2337b6af-887c-4b5f-a448-86fa9c0d4b44"
@@ -671,7 +699,7 @@
                 "trace_as_metadata": true,
                 "track_in_telemetry": false,
                 "type": "str",
-                "value": "You are a QA engineer with 15 years of experience. Based on the user input, you answer queries only related to QA."
+                "value": "Your task is to whatever input is coming, you have to perform the task based on the input."
               },
               "temperature": {
                 "_input_type": "SliderInput",
@@ -738,8 +766,8 @@
           "width": 320
         },
         "position": {
-          "x": 294.7282881693611,
-          "y": -241.03458257934662
+          "x": 489.39289459232646,
+          "y": -231.90967915327013
         },
         "selected": false,
         "type": "genericNode"
@@ -1040,24 +1068,200 @@
           "width": 192
         },
         "position": {
-          "x": 884.3837537923404,
-          "y": -27.329154618149047
+          "x": 930.0082709227228,
+          "y": -114.52267624510228
+        },
+        "selected": false,
+        "type": "genericNode"
+      },
+      {
+        "data": {
+          "id": "Prompt Template-3Vxos",
+          "node": {
+            "base_classes": [
+              "Message"
+            ],
+            "beta": false,
+            "conditional_paths": [],
+            "custom_fields": {
+              "template": [
+                "bug_report"
+              ]
+            },
+            "description": "Create a prompt template with dynamic variables.",
+            "display_name": "Prompt Template",
+            "documentation": "https://docs.langflow.org/components-prompts",
+            "edited": false,
+            "error": null,
+            "field_order": [
+              "template",
+              "tool_placeholder"
+            ],
+            "frozen": false,
+            "full_path": null,
+            "icon": "braces",
+            "is_composition": null,
+            "is_input": null,
+            "is_output": null,
+            "legacy": false,
+            "lf_version": "1.7.2",
+            "metadata": {
+              "code_hash": "7382d03ce412",
+              "dependencies": {
+                "dependencies": [
+                  {
+                    "name": "lfx",
+                    "version": "0.2.1"
+                  }
+                ],
+                "total_dependencies": 1
+              },
+              "module": "lfx.components.models_and_agents.prompt.PromptComponent"
+            },
+            "minimized": false,
+            "name": "",
+            "output_types": [],
+            "outputs": [
+              {
+                "allows_loop": false,
+                "cache": true,
+                "display_name": "Prompt",
+                "group_outputs": false,
+                "hidden": null,
+                "loop_types": null,
+                "method": "build_prompt",
+                "name": "prompt",
+                "options": null,
+                "required_inputs": null,
+                "selected": "Message",
+                "tool_mode": true,
+                "types": [
+                  "Message"
+                ],
+                "value": "__UNDEFINED__"
+              }
+            ],
+            "pinned": false,
+            "priority": 0,
+            "replacement": null,
+            "template": {
+              "_type": "Component",
+              "bug_report": {
+                "advanced": false,
+                "display_name": "bug_report",
+                "dynamic": false,
+                "field_type": "str",
+                "fileTypes": [],
+                "file_path": "",
+                "info": "",
+                "input_types": [
+                  "Message"
+                ],
+                "list": false,
+                "load_from_db": false,
+                "multiline": true,
+                "name": "bug_report",
+                "placeholder": "",
+                "required": false,
+                "show": true,
+                "title_case": false,
+                "type": "str",
+                "value": ""
+              },
+              "code": {
+                "advanced": true,
+                "dynamic": true,
+                "fileTypes": [],
+                "file_path": "",
+                "info": "",
+                "list": false,
+                "load_from_db": false,
+                "multiline": true,
+                "name": "code",
+                "password": false,
+                "placeholder": "",
+                "required": true,
+                "show": true,
+                "title_case": false,
+                "type": "code",
+                "value": "from lfx.base.prompts.api_utils import process_prompt_template\nfrom lfx.custom.custom_component.component import Component\nfrom lfx.inputs.inputs import DefaultPromptField\nfrom lfx.io import MessageTextInput, Output, PromptInput\nfrom lfx.schema.message import Message\nfrom lfx.template.utils import update_template_values\n\n\nclass PromptComponent(Component):\n    display_name: str = \"Prompt Template\"\n    description: str = \"Create a prompt template with dynamic variables.\"\n    documentation: str = \"https://docs.langflow.org/components-prompts\"\n    icon = \"braces\"\n    trace_type = \"prompt\"\n    name = \"Prompt Template\"\n    priority = 0  # Set priority to 0 to make it appear first\n\n    inputs = [\n        PromptInput(name=\"template\", display_name=\"Template\"),\n        MessageTextInput(\n            name=\"tool_placeholder\",\n            display_name=\"Tool Placeholder\",\n            tool_mode=True,\n            advanced=True,\n            info=\"A placeholder input for tool mode.\",\n        ),\n    ]\n\n    outputs = [\n        Output(display_name=\"Prompt\", name=\"prompt\", method=\"build_prompt\"),\n    ]\n\n    async def build_prompt(self) -> Message:\n        prompt = Message.from_template(**self._attributes)\n        self.status = prompt.text\n        return prompt\n\n    def _update_template(self, frontend_node: dict):\n        prompt_template = frontend_node[\"template\"][\"template\"][\"value\"]\n        custom_fields = frontend_node[\"custom_fields\"]\n        frontend_node_template = frontend_node[\"template\"]\n        _ = process_prompt_template(\n            template=prompt_template,\n            name=\"template\",\n            custom_fields=custom_fields,\n            frontend_node_template=frontend_node_template,\n        )\n        return frontend_node\n\n    async def update_frontend_node(self, new_frontend_node: dict, current_frontend_node: dict):\n        \"\"\"This function is called after the code validation is done.\"\"\"\n        frontend_node = await super().update_frontend_node(new_frontend_node, current_frontend_node)\n        template = frontend_node[\"template\"][\"template\"][\"value\"]\n        # Kept it duplicated for backwards compatibility\n        _ = process_prompt_template(\n            template=template,\n            name=\"template\",\n            custom_fields=frontend_node[\"custom_fields\"],\n            frontend_node_template=frontend_node[\"template\"],\n        )\n        # Now that template is updated, we need to grab any values that were set in the current_frontend_node\n        # and update the frontend_node with those values\n        update_template_values(new_template=frontend_node, previous_template=current_frontend_node[\"template\"])\n        return frontend_node\n\n    def _get_fallback_input(self, **kwargs):\n        return DefaultPromptField(**kwargs)\n"
+              },
+              "template": {
+                "_input_type": "PromptInput",
+                "advanced": false,
+                "display_name": "Template",
+                "dynamic": false,
+                "info": "",
+                "list": false,
+                "list_add_label": "Add More",
+                "name": "template",
+                "override_skip": false,
+                "placeholder": "",
+                "required": false,
+                "show": true,
+                "title_case": false,
+                "tool_mode": false,
+                "trace_as_input": true,
+                "track_in_telemetry": false,
+                "type": "prompt",
+                "value": "## ROLE\nYou are a Senior QA Engineer.\n\n## TASK\nGenerate **[NUMBER]** detailed test cases for **[FEATURE]** and structure them for export into a `.xls` file.\n\n---\n\n## OUTPUT REQUIREMENTS\n- The output must be formatted as a table suitable for Excel (`.xls`).\n- Include a timestamp in the file name:  \n  **TestCases_<YYYYMMDD_HHMMSS>.xls**\n- Each test step must be written in a separate row.\n- There must be **one blank row between each test case**.\n\n---\n\n## STRUCTURE\n\nUse the following column format:\n\n| TID | Test Case Name | Category | Description | Pre-conditions | Step No | Step Description | Expected Result | Priority |\n\n---\n\n## FORMATTING RULES\n\n1. **TID, Test Case Name, Category, Description, and Pre-conditions** must appear **ONLY in the first row** of each test case.\n2. For all subsequent rows (steps of the same test case), leave the above fields **blank**.\n3. Each step must include:\n   - A unique **Step No**\n   - A corresponding **Expected Result** (1:1 mapping with the step)\n4. Insert **exactly one blank row** after completing all steps of a test case.\n5. Do **NOT merge cells**.\n6. Ensure the structure is **directly usable in Excel without additional transformation**.\n\n---\n\n## CONSTRAINTS\n\n- Use **ONLY** the provided requirements.\n- Do **NOT assume** undocumented behavior.\n- If any required information is missing, explicitly state: **\"Not specified\"**.\n\n---\n\n## REQUIREMENTS\n{bug_report}\n"
+              },
+              "tool_placeholder": {
+                "_input_type": "MessageTextInput",
+                "advanced": true,
+                "display_name": "Tool Placeholder",
+                "dynamic": false,
+                "info": "A placeholder input for tool mode.",
+                "input_types": [
+                  "Message"
+                ],
+                "list": false,
+                "list_add_label": "Add More",
+                "load_from_db": false,
+                "name": "tool_placeholder",
+                "override_skip": false,
+                "placeholder": "",
+                "required": false,
+                "show": true,
+                "title_case": false,
+                "tool_mode": true,
+                "trace_as_input": true,
+                "trace_as_metadata": true,
+                "track_in_telemetry": false,
+                "type": "str",
+                "value": ""
+              }
+            },
+            "tool_mode": false
+          },
+          "showNode": true,
+          "type": "Prompt Template"
+        },
+        "dragging": false,
+        "id": "Prompt Template-3Vxos",
+        "measured": {
+          "height": 366,
+          "width": 320
+        },
+        "position": {
+          "x": 91.90806193453139,
+          "y": -212.52004253212203
         },
         "selected": false,
         "type": "genericNode"
       }
     ],
     "viewport": {
-      "x": 198.3499932232765,
-      "y": 314.61623835574494,
-      "zoom": 0.9863118084384805
+      "x": 201.00477820409236,
+      "y": 306.257165890665,
+      "zoom": 0.9438390511373022
     }
   },
-  "description": "This AI Agent is used to get QA related answers",
+  "description": "This AI Agent is used to generate Test cases for the given document or user story details",
   "endpoint_name": null,
-  "id": "c34ba12a-d5f4-4834-9d03-53729a3395b5",
+  "id": "a0fd0456-96c1-4e75-99bf-163cc5f21e68",
   "is_component": false,
   "last_tested_version": "1.7.2",
-  "name": "MAR_LangFlow-001.AI_Agent_QA_Buddy",
+  "name": "MAR_LangFlow-003.AI_Agent_TestCaseGenerator",
   "tags": []
 }
